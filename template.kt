@@ -1,5 +1,7 @@
+import java.io.File
+
 fun main() {
-    file = generateFile()
+    val file = generateFile()
 
     println("Part 1: ${part1(file)}")
     println("Part 1: ${part2(file)}")
