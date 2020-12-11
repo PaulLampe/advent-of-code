@@ -82,7 +82,7 @@ fun occupiedVisibleSeats(file: Array<CharArray>, x: Int, y: Int, xDim: Int, yDim
                     if (file[newY][newX] == '#') {
                         counter++
                         newX = -1
-                    } else if(file[newY][newX] == 'L') {
+                    } else if (file[newY][newX] == 'L') {
                         newX = -1
                     } else {
                         newX += deltaX
