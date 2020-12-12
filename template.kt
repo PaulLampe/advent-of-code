@@ -4,7 +4,7 @@ fun main() {
     val file = generateFile()
 
     println("Part 1: ${part1(file)}")
-    println("Part 1: ${part2(file)}")
+    println("Part 2: ${part2(file)}")
 }
 
 fun part1(file: List<>): {
