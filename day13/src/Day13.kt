@@ -31,7 +31,6 @@ fun part2(file: Pair<Int, List<String>>): Long {
         if(l != 0L) {
             while ((timestamp + index) % l != 0L) {
                 timestamp += addValue
-                println(timestamp)
             }
             addValue = lcm(addValue, l)
         }
