@@ -28,7 +28,7 @@ fun part2(file: Pair<Int, List<String>>): Long {
     var timestamp = 1L
     var addValue = 1L
     file.second.map { if (it != "x") it.toLong() else 0L }.forEachIndexed { index, l ->
-        if(l != 0L) {
+        if (l != 0L) {
             while ((timestamp + index) % l != 0L) {
                 timestamp += addValue
             }
@@ -38,7 +38,7 @@ fun part2(file: Pair<Int, List<String>>): Long {
     return timestamp
 }
 
-fun lcm(long1: Long, long2: Long):Long {
+fun lcm(long1: Long, long2: Long): Long {
     var gcd = 1
 
     var i = 1
@@ -48,8 +48,7 @@ fun lcm(long1: Long, long2: Long):Long {
             gcd = i
         ++i
     }
-
-    return long1*long2/gcd
+    return long1 * long2 / gcd
 }
 
 fun generateFile(): Pair<Int, List<String>> {
