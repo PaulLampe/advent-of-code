@@ -11,7 +11,6 @@ fun part1(file: List<Int>): Long {
     val saidNumbers: MutableList<Long> = mutableListOf()
     for (i in file) {
         saidNumbers.add(i.toLong())
-        println(saidNumbers.last())
     }
     var currentNumber = 0L
     for (i in file.size until 2020) {
@@ -24,7 +23,6 @@ fun part1(file: List<Int>): Long {
             saidNumbers.add(currentNumber)
             currentNumber = 0L
         }
-        println(saidNumbers.last())
     }
     return saidNumbers.last()
 }
